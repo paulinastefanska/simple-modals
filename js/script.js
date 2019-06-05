@@ -11,7 +11,9 @@
 	var modalLinks = document.querySelectorAll('.show-modal');
 	
 	for(var i = 0; i < modalLinks.length; i++){
-		modalLinks[i].addEventListener('click', showModal);
+		modalLinks[i].addEventListener('click', function(event){
+			
+		});
 	}
 
 //close modals
