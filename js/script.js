@@ -23,8 +23,8 @@
 	
 	var closeButtons = document.querySelectorAll('.modal .close');
 	
-	for(var i = 0; i < closeButtons.length; i++){
-		closeButtons[i].addEventListener('click', hideModal);
+	for(var j = 0; j < closeButtons.length; j++){
+		closeButtons[j].addEventListener('click', hideModal);
 	}
 	
 //close modals - click in overlay
@@ -33,8 +33,8 @@
 //stop propagation  
 	var modals = document.querySelectorAll('.modal');
 	
-	for(var i = 0; i < modals.length; i++){
-		modals[i].addEventListener('click', function(event){
+	for(var k = 0; k < modals.length; k++){
+		modals[k].addEventListener('click', function(event){
 			event.stopPropagation();
 		});
 	}
