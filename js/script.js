@@ -5,7 +5,6 @@
 	var showModal = function(event){
 		event.preventDefault();
 		document.querySelector('#modal-overlay').classList.add('show');
-		document.querySelector('.modal').classList.add('show');
 	};
   
  //modals links
@@ -25,7 +24,7 @@
 	
 	for(var j = 0; j < closeButtons.length; j++){
 		closeButtons[j].addEventListener('click', hideModal);
-	}
+	};
 	
 //close modals - click in overlay
 	document.querySelector('#modal-overlay').addEventListener('click', hideModal);
