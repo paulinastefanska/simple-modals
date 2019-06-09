@@ -37,14 +37,6 @@ for(var j = 0; j < closeButtons.length; j++){
 	
 //close modals - click in overlay
 document.querySelector('#modal-overlay').addEventListener('click', hideModal);
-  
-//stop propagation  
-var modals = document.querySelectorAll('.modal');
 
-for(var k = 0; k < modals.length; k++){
-	modals[k].addEventListener('click', function(event){
-		event.stopPropagation();
-	});
-}
  
 })(); 
